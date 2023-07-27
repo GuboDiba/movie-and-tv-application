@@ -6,7 +6,7 @@ import './style.css';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 // const [selectedCategory, setSelectedCategory] = useState("All");
@@ -48,8 +48,10 @@ const MovieList = () => {
         infinite: true,
         speed: 500,
         color:"white",
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
     };
 
 
@@ -79,6 +81,7 @@ const MovieList = () => {
           <div className="imag11">
                 {imageUrl && <img src={imageUrl} alt={firstMovie.title} className="topim"/>}
                 <h2>{movies.title}</h2>
+                
             </div>
 
          
@@ -104,11 +107,11 @@ const MovieList = () => {
                 {loading === false && movies.length > 0 && movies.map(
                     
                     item => (
-                        // <ImageContainer props={item} key={item.id} />
+                        <ImageContainer props={item} key={item.id} />
 
-                        <Link to={`/moviedetails/${item.id}`} key={item.id}>
-                        <ImageContainer props={item} />
-                      </Link>
+                    //     <Link to={`/moviedetails/${item.id}`} key={item.id}>
+                    //     <ImageContainer props={item} />
+                    //   </Link>
                     )
                 )}
             </div>
