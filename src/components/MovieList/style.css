@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(19, 19, 18);
+}
 .image-container{
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
@@ -12,7 +15,69 @@ img{
     height: auto;
     object-fit: cover;
 }
+.nav{
+    padding: 2%;
+    display: flex;
+    gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.nav input{
+    padding: 0 200px ;
+    border-radius: 10px;
+}
+.nav button{
+    padding: 15px 30px ;
+    background-color: gold;
+    border: none;
+    border-radius: 10px;
+}
+.nav p{
+    color: white;
+}
+#movie{
+    color: gold;
+}
+
+.image1{
+    height: 40%;
+}
+.buttnn{
+    margin-left: 20%;
+    gap: 2em;
+}
+.buttnn,button{
+    padding: 2%;
+    gap: 200em;
+    border: none;
+    border-radius: 20%;
+    margin-left: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+   
+ 
+}
+.imag11{
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 3%;
+    display: flex;
+
+}
+.topim{
+    height: 40%;
+    width: 40%;
+    margin-left: 3%;
+}
+
+.buttonDisplay{
+    display: flex;
+    height: 1%;
+}
 .moviesDisplay{
-width: 50%;
-height: 50%;
+    height: 100%;
+    width: 98%;
+    background-color: white;
+    margin-bottom: 2%;
 }
